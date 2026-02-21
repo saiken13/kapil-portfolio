@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0b10;
+  --foreground: #f2f4f8;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: "Satoshi", "Avenir Next", "Segoe UI", sans-serif;
+  --font-display: "Clash Display", "General Sans", "Avenir Next", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: rgb(255 255 255 / 0.06);
+}
+
+html,
+body {
+  min-height: 100%;
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(circle at 20% 10%, rgb(16 20 29) 0%, rgb(10 11 16) 42%, rgb(7 8 12) 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+}
+
+.panel-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(110 118 138 / 0.6) transparent;
+}
+
+.panel-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.panel-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.panel-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgb(131 140 164 / 0.55), rgb(75 85 99 / 0.6));
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.panel-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgb(147 197 253 / 0.7), rgb(45 212 191 / 0.45));
+  border: 2px solid transparent;
+  background-clip: padding-box;
 }
