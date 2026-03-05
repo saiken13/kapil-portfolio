@@ -3,6 +3,7 @@ import { portfolioData } from "@/data/data";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(portfolioData.seo.url),
   title: portfolioData.seo.title,
   description: portfolioData.seo.description,
   openGraph: {

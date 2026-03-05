@@ -63,10 +63,11 @@ export function PortfolioShell() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-zinc-950 text-zinc-100">
-      <div className="pointer-events-none absolute inset-0 opacity-80">
-        <div className="absolute -top-28 left-1/3 h-80 w-80 rounded-full bg-emerald-500/10 blur-[100px]" />
-        <div className="absolute bottom-10 left-10 h-72 w-72 rounded-full bg-sky-500/10 blur-[120px]" />
+    <div className="relative min-h-screen overflow-hidden bg-zinc-950 text-slate-100">
+      <div className="pointer-events-none absolute inset-0 opacity-90">
+        <div className="absolute -top-24 left-1/4 h-80 w-80 animate-[driftA_14s_ease-in-out_infinite] rounded-full bg-blue-400/10 blur-[110px]" />
+        <div className="absolute top-1/3 right-1/4 h-72 w-72 animate-[driftB_16s_ease-in-out_infinite] rounded-full bg-cyan-300/10 blur-[130px]" />
+        <div className="absolute bottom-10 left-10 h-72 w-72 animate-[driftA_18s_ease-in-out_infinite] rounded-full bg-slate-300/10 blur-[130px]" />
       </div>
 
       <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-5 pb-10 pt-8 sm:px-8 lg:h-screen lg:grid-cols-[minmax(300px,390px)_1fr] lg:gap-12 lg:overflow-hidden lg:py-8">
@@ -85,14 +86,14 @@ export function PortfolioShell() {
 
         <main
           ref={contentRef}
-          className="panel-scrollbar space-y-12 pb-8 lg:h-full lg:overflow-y-auto lg:py-6 lg:pr-3"
+          className="panel-scrollbar space-y-14 pb-8 lg:h-full lg:overflow-y-auto lg:py-6 lg:pr-3"
           aria-label="Portfolio content"
         >
           <HeroSection />
           <AboutSection />
           <SkillsSection />
           <ExperienceSection />
-          <ProjectsSection />
+          <ProjectsSection scrollContainerRef={contentRef} />
           <ContactSection />
         </main>
       </div>
