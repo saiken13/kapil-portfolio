@@ -8,11 +8,31 @@ import { ExperienceSection } from "@/sections/experience-section";
 import { HeroSection } from "@/sections/hero-section";
 import { ProjectsSection } from "@/sections/projects-section";
 import { SkillsSection } from "@/sections/skills-section";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 export function PortfolioShell() {
   const [activeSection, setActiveSection] = useState("home");
   const contentRef = useRef<HTMLDivElement>(null);
+
+  const rawX = useMotionValue(0);
+  const rawY = useMotionValue(0);
+  const springX = useSpring(rawX, { stiffness: 100, damping: 30 });
+  const springY = useSpring(rawY, { stiffness: 100, damping: 30 });
+  const glowBg = useTransform(
+    [springX, springY],
+    ([x, y]: number[]) =>
+      `radial-gradient(550px circle at ${x}px ${y}px, rgba(56,189,248,0.055), transparent 80%)`,
+  );
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      rawX.set(e.clientX);
+      rawY.set(e.clientY);
+    };
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, [rawX, rawY]);
 
   useEffect(() => {
     const root = contentRef.current;
@@ -64,13 +84,19 @@ export function PortfolioShell() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-zinc-950 text-slate-100">
+      <motion.div
+        className="pointer-events-none fixed inset-0 z-10"
+        style={{ background: glowBg }}
+      />
+
       <div className="pointer-events-none absolute inset-0 opacity-90">
         <div className="absolute -top-24 left-1/4 h-80 w-80 animate-[driftA_14s_ease-in-out_infinite] rounded-full bg-blue-400/10 blur-[110px]" />
         <div className="absolute top-1/3 right-1/4 h-72 w-72 animate-[driftB_16s_ease-in-out_infinite] rounded-full bg-cyan-300/10 blur-[130px]" />
         <div className="absolute bottom-10 left-10 h-72 w-72 animate-[driftA_18s_ease-in-out_infinite] rounded-full bg-slate-300/10 blur-[130px]" />
+        <div className="absolute top-2/3 right-10 h-60 w-60 animate-[driftB_20s_ease-in-out_infinite] rounded-full bg-violet-400/8 blur-[120px]" />
       </div>
 
-      <div className="relative mx-auto grid w-full max-w-7xl gap-10 px-5 pb-10 pt-8 sm:px-8 lg:h-screen lg:grid-cols-[minmax(300px,390px)_1fr] lg:gap-12 lg:overflow-hidden lg:py-8">
+      <div className="relative z-20 mx-auto grid w-full max-w-7xl gap-10 px-5 pb-10 pt-8 sm:px-8 lg:h-screen lg:grid-cols-[minmax(300px,390px)_1fr] lg:gap-12 lg:overflow-hidden lg:py-8">
         <div className="lg:border-r lg:border-white/10 lg:py-6 lg:pr-10">
           <Sidebar
             name={portfolioData.profile.name}
