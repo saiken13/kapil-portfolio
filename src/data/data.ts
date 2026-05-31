@@ -174,7 +174,7 @@ export const portfolioData = {
     {
       role: "Software Developer",
       company: "Reliance Jio Platforms Ltd",
-      period: "Jul 2022 – Oct 2023",
+      period: "Jul 2022 – Jul 2024",
       location: "Mumbai, India",
       points: [
         "Developed and optimized a B2B e-commerce platform using React, Redux-Saga, and JavaScript, contributing to over 50% of the codebase; delivered Cart, Checkout, and Payment features integrated with Jio Payment Gateway, scaling the user base from 150K to 350K.",
