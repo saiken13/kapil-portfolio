@@ -5,7 +5,7 @@ import { SectionContainer } from "@/components/section-container";
 import { motion } from "framer-motion";
 
 const stats = [
-  { value: "2+", label: "Years Experience" },
+  { value: "3+", label: "Years Experience" },
   { value: "7", label: "AI Agents Shipped" },
   { value: "350K+", label: "Users Scaled To" },
 ];
