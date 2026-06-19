@@ -172,16 +172,28 @@ export const portfolioData = {
       ],
     },
     {
+      role: "Backend Engineer",
+      company: "Nexus Labs",
+      period: "Oct 2024 – Sep 2025",
+      location: "Chicago, IL (Hybrid)",
+      points: [
+        "Re-architected three high-use REST API endpoints in Node.js and PostgreSQL with schema optimizations, query indexing, and Redis caching, bringing average response time down by 30% and reducing database load by 40%.",
+        "Diagnosed latency spikes across the microservices architecture using distributed tracing; introduced gRPC for internal service calls and implemented circuit breaker patterns, cutting p95 latency by 25%.",
+        "Owned end-to-end CI/CD pipeline migration to GitHub Actions with automated testing gates, reducing failed production releases by 40% and shrinking deploy cycle time by 60%.",
+        "Delivered two backend modules end-to-end with full ownership from design to deployment, ramping up independently on an unfamiliar codebase with zero critical bugs post-release.",
+      ],
+    },
+    {
       role: "Software Developer",
       company: "Reliance Jio Platforms Ltd",
       period: "Jul 2022 – Jul 2024",
       location: "Mumbai, India",
       points: [
-        "Developed and optimized a B2B e-commerce platform using React, Redux-Saga, and JavaScript, contributing to over 50% of the codebase; delivered Cart, Checkout, and Payment features integrated with Jio Payment Gateway, scaling the user base from 150K to 350K.",
-        "Built Refund Approval and Reprocess modules managing payment failures and transaction errors for 1,000+ cases monthly; implemented JWT-based single-device authentication to enhance security.",
-        "Automated SIM Card Kit barcode scanning, reducing errors by 50% and improving operational efficiency by 60%; digitized a paper-based system handling 20+ million SIM card kits annually.",
-        "Refactored 3,000+ lines to ES6+ standards, improved Lighthouse scores by 30%, and redesigned a desktop-only UI into a responsive mobile app cutting technician time by 60%.",
-        "Built an end-to-end Admin dashboard with CRUD operations; participated in Agile code reviews and sprint planning.",
+        "Architected and scaled a B2B e-commerce SaaS platform from 150K to 350K active users, engineering cart, checkout, and payment workflows in React, Redux-Saga, and PostgreSQL with distributed microservices architecture.",
+        "Built distributed payment microservices handling 1,000+ monthly transaction failures; implemented JWT-based auth and refund workflows in Node.js and Express, maintaining zero critical payment failures across all processing.",
+        "Designed and optimized PostgreSQL schemas applying OOP principles and design patterns, reducing query execution time by 45% and supporting a 2x increase in concurrent users without performance degradation.",
+        "Spearheaded refactoring of 3,000+ lines to ES6+, improving Lighthouse scores by 30%, and re-architected a desktop-only UI into a fully responsive mobile application across 12 regional offices.",
+        "Led technical design reviews across 8 engineers, standardizing microservices component architecture and agile practices that cut sprint regression rate by 35%.",
       ],
     },
     {
