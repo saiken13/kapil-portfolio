@@ -173,7 +173,7 @@ export const portfolioData = {
     },
     {
       role: "Backend Engineer",
-      company: "Nexus Labs",
+      company: "Veltrix",
       period: "Oct 2024 – Sep 2025",
       location: "Chicago, IL (Hybrid)",
       points: [
