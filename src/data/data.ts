@@ -50,7 +50,7 @@ export const portfolioData = {
     name: "Kapil Hingu",
     role: "AI Software Engineer",
     location: "Chicago, IL",
-    status: "Graduating June 2026 — open to full-time roles",
+    status: "M.S. Computer Science, June 2026 — open to full-time roles",
     tagline: "I build agentic AI platforms, production backend systems, and high-impact digital products that scale.",
     shortIntro:
       "AI Software Engineer with 3+ years shipping 7-agent LLM orchestration, RAG pipelines, and payment infrastructure that scaled to 350K users.",
@@ -65,7 +65,7 @@ export const portfolioData = {
     { id: "contact", label: "Contact" },
   ] as NavLink[],
   about: {
-    bio: "AI Software Engineer with 3+ years of experience building agentic AI platforms, production backend systems, and payment infrastructure at scale. Shipped 7-agent LLM orchestration with LangGraph, RAG pipelines using vector embeddings, and B2B e-commerce features scaling from 150K to 350K users. Completing M.S. in Computer Science at DePaul University (GPA: 3.74, June 2026).",
+    bio: "AI Software Engineer with 3+ years of experience building agentic AI platforms, production backend systems, and payment infrastructure at scale. Shipped 7-agent LLM orchestration with LangGraph, RAG pipelines using vector embeddings, and B2B e-commerce features scaling from 150K to 350K users. Completed M.S. in Computer Science at DePaul University (GPA: 3.78, June 2026).",
     highlights: [
       "Won Most Original Idea at HackDePaul 2025 for Sukoon — an AI wellness scheduler built in 24 hours",
       "Attended 2 hackathons in the US",
@@ -74,8 +74,8 @@ export const portfolioData = {
       {
         degree: "M.S. Computer Science",
         school: "DePaul University, Chicago, IL",
-        period: "Expected June 2026",
-        gpa: "GPA: 3.74",
+        period: "June 2026",
+        gpa: "GPA: 3.78",
         coursework: [
           "Algorithms and Data Structures",
           "Database Systems",
