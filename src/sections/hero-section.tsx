@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 
 const stats = [
   { value: "3+", label: "Years Experience" },
-  { value: "7", label: "AI Agents Shipped" },
+  { value: "94%", label: "AI Resolution Accuracy" },
   { value: "350K+", label: "Users Scaled To" },
 ];
 
-const techHighlights = ["LangGraph", "RAG Pipelines", "FastAPI", "Spring Boot", "React", "AWS", "PostgreSQL", "gRPC"];
+const techHighlights = ["LangGraph", "RAG Pipelines", "FastAPI", "LangChain", "React", "AWS", "PostgreSQL", "OpenAI API"];
 
 const containerVariants = {
   hidden: {},
@@ -37,7 +37,7 @@ export function HeroSection() {
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
           </span>
           <span className="text-xs font-medium tracking-wide text-emerald-300">
-            Building with LangGraph · Claude Code · FastAPI
+            Building with LangChain · RAG Pipelines · FastAPI
           </span>
         </motion.div>
 
