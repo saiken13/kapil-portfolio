@@ -42,7 +42,7 @@ export const portfolioData = {
   seo: {
     title: "Kapil Hingu | AI Software Engineer",
     description:
-      "Portfolio of Kapil Hingu, an AI Software Engineer with 3+ years of experience building agentic AI platforms, production backend systems, and payment infrastructure at scale.",
+      "Portfolio of Kapil Hingu, an AI Software Engineer with 4+ years of experience building agentic AI platforms, production backend systems, and payment infrastructure at scale.",
     url: "https://kapil-portfolio-lemon.vercel.app",
     image: "/og-image.svg",
   },
@@ -53,7 +53,7 @@ export const portfolioData = {
     status: "M.S. Computer Science, June 2026 — open to full-time roles",
     tagline: "I build agentic AI platforms, production backend systems, and high-impact digital products that scale.",
     shortIntro:
-      "AI Software Engineer with 3+ years shipping 7-agent LLM orchestration, RAG pipelines, and payment infrastructure that scaled to 350K users.",
+      "AI Software Engineer with 4+ years shipping 7-agent LLM orchestration, RAG pipelines, and payment infrastructure that scaled to 350K users.",
     resumeHref: "/resume/Resume_Kapil_Hingu.pdf",
   },
   navLinks: [
@@ -65,7 +65,7 @@ export const portfolioData = {
     { id: "contact", label: "Contact" },
   ] as NavLink[],
   about: {
-    bio: "AI Software Engineer with 3+ years of experience building agentic AI platforms, production backend systems, and payment infrastructure at scale. Shipped 7-agent LLM orchestration with LangGraph, RAG pipelines using vector embeddings, and B2B e-commerce features scaling from 150K to 350K users. Completed M.S. in Computer Science at DePaul University (GPA: 3.78, June 2026).",
+    bio: "AI Software Engineer with 4+ years of experience building agentic AI platforms, production backend systems, and payment infrastructure at scale. Shipped 7-agent LLM orchestration with LangGraph, RAG pipelines using vector embeddings, and B2B e-commerce features scaling from 150K to 350K users. Completed M.S. in Computer Science at DePaul University (GPA: 3.78, June 2026).",
     highlights: [
       "Won Most Original Idea at HackDePaul 2025 for Sukoon — an AI wellness scheduler built in 24 hours",
       "Attended 2 hackathons in the US",
