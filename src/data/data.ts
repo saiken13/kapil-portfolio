@@ -49,7 +49,7 @@ export const portfolioData = {
   profile: {
     name: "Kapil Hingu",
     role: "AI Software Engineer",
-    location: "Chicago, IL",
+    location: "San Jose, CA",
     status: "M.S. Computer Science, June 2026 — open to full-time roles",
     tagline: "I build agentic AI platforms, production backend systems, and high-impact digital products that scale.",
     shortIntro:
